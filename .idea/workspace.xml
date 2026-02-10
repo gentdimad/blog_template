@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e779e2a-7ea3-48ec-aa9a-f0afb1d7f909" name="Changes" comment="" />
+    <list default="true" id="7e779e2a-7ea3-48ec-aa9a-f0afb1d7f909" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/blog_template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog_template/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_template/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/blog_template/vite.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +40,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "advanced.settings",
     "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\victo\\Documents\\Templates\\blog_template\\blog_template\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770724044909</updated>
-      <workItem from="1770724049439" duration="2143000" />
+      <workItem from="1770724049439" duration="2560000" />
     </task>
     <servers />
   </component>
