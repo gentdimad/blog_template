@@ -1,0 +1,77 @@
+/* Global styles using monochrome tokens from site config (injected as CSS variables). */
+:root {
+  color-scheme: light dark;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 1100px; padding: 0 var(--space-4); margin: 0 auto; }
+main { padding: var(--space-6) 0; }
+
+header.site-header { border-bottom: 1px solid var(--color-border); background: var(--color-bg-soft); position: sticky; top: 0; z-index: 10; }
+.site-header .brand { font-weight: 700; letter-spacing: 0.3px; }
+.site-nav a { margin-right: var(--space-4); color: var(--color-muted); }
+.site-nav a.active { color: var(--color-text); }
+
+footer.site-footer { border-top: 1px solid var(--color-border); padding: var(--space-6) 0; color: var(--color-muted); }
+
+.page main .prose { max-width: var(--max-width); }
+
+/* Cards & lists */
+.post-card { padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-elev); }
+.post-card + .post-card { margin-top: var(--space-4); }
+.post-card .meta { color: var(--color-muted); font-size: 0.9rem; margin: var(--space-2) 0 var(--space-2); display: flex; gap: var(--space-2); }
+.tags { list-style: none; padding: 0; margin: var(--space-2) 0 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.tags a { color: var(--color-muted); }
+
+.featured { padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-elev); margin-bottom: var(--space-6); }
+.featured h2 { font-size: 2rem; margin: 0 0 var(--space-2); }
+
+/* Buttons */
+.button { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--color-text); border: 1px solid var(--color-border); border-radius: 999px; padding: 0.5rem 0.9rem; cursor: pointer; }
+.button:hover { border-color: var(--color-text); }
+
+/* Content typography */
+.prose h1 { font-size: 2.25rem; line-height: 1.2; margin: var(--space-5) 0 var(--space-3); }
+.prose h2 { font-size: 1.6rem; line-height: 1.25; margin: var(--space-5) 0 var(--space-3); }
+.prose h3 { font-size: 1.25rem; line-height: 1.3; margin: var(--space-4) 0 var(--space-2); }
+.prose p { margin: 0 0 var(--space-4); }
+.prose blockquote { margin: var(--space-4) 0; padding-left: var(--space-4); border-left: 3px solid var(--color-border); color: var(--color-muted); }
+.prose code { font-family: var(--font-mono); background: var(--color-bg-soft); padding: 0.15rem 0.35rem; border-radius: 4px; border: 1px solid var(--color-border); }
+.prose pre { overflow: auto; padding: var(--space-4); border-radius: var(--radius); background: #0f0f0f; border: 1px solid var(--color-border); }
+.prose pre code { background: transparent; border: 0; padding: 0; display: block; }
+
+/* TOC */
+.toc { position: sticky; top: 5rem; padding-left: var(--space-5); border-left: 1px dashed var(--color-border); color: var(--color-muted); }
+.toc a { color: var(--color-muted); }
+
+/* Utility */
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-3 { gap: 0.75rem; }
+.py-4 { padding-top: var(--space-4); padding-bottom: var(--space-4); }
+.muted { color: var(--color-muted); }
+
+/* Prism basic overrides (monochrome) */
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8a8a8a; }
+.token.punctuation { color: #cfcfcf; }
+.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted { color: #e5e5e5; }
+.token.boolean, .token.number { color: #d0d0d0; }
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: #ffffff; }
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string { color: #cdcdcd; }
+.token.atrule, .token.attr-value, .token.keyword { color: #fff; font-weight: 600; }
+.token.function, .token.class-name { color: #f3f3f3; }
+.token.regex, .token.important, .token.variable { color: #e0e0e0; }

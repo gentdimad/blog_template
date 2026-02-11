@@ -1,9 +1,6 @@
-version: "3.9"
-
 services:
   web-dev:
     image: node:20-alpine
-    profiles: ["dev"]
     working_dir: /app
     ports:
       - "5173:5173"
@@ -13,7 +10,7 @@ services:
     environment:
       VITE_BASE: "/"
       HOST: "0.0.0.0"
-    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0 --port 5173"
+    command: sh -c "npm install --no-audit --no-fund && npm run dev -- --host 0.0.0.0 --port 5173"
 
   web-prod:
     build:

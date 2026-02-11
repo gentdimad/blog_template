@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE ?? '/blog_template/'
+  base: process.env.VITE_BASE ?? '/',
+  assetsInclude: ['**/*.md']
 })

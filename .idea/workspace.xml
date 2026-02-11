@@ -6,20 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7e779e2a-7ea3-48ec-aa9a-f0afb1d7f909" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_template/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +45,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "advanced.settings",
     "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\victo\\Documents\\Templates\\blog_template\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1770724044909</updated>
       <workItem from="1770724049439" duration="4127000" />
+      <workItem from="1770802456966" duration="2426000" />
     </task>
     <servers />
   </component>
