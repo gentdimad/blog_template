@@ -29,23 +29,20 @@ jobs:
 
       - name: Install deps
         run: npm install
-        working-directory: blog_template
 
       - name: Set base for GitHub Pages
         run: echo "VITE_BASE=/${{ github.event.repository.name }}/" >> $GITHUB_ENV
 
       - name: Build
         run: npm run build
-        working-directory: blog_template
 
       - name: Add 404.html for SPA routing
         run: cp dist/index.html dist/404.html
-        working-directory: blog_template
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: blog_template/dist
+          path: dist
 
   deploy:
     environment:
