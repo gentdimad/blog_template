@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { applyTheme } from '../../config/site'
 
 export default function ThemeToggle() {

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import type { Heading } from '../../data/types'
 
 export default function TableOfContents({ headings }: { headings: Heading[] }) {

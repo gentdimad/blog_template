@@ -52,7 +52,7 @@ export async function loadAllPosts(): Promise<Post[]> {
   }
   const posts: Post[] = []
 
-  for (const [path, raw] of entries) {
+  for (const [, raw] of entries) {
     const { fm, body } = parseFrontmatter(raw)
     if (!fm || !fm.slug || fm.draft) continue
 

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { loadAllPosts } from '../../data/index'
 import { Link } from 'react-router-dom'
 

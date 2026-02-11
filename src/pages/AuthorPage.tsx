@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import Page from '../components/layout/Page'
 import PostList from '../components/cards/PostList'
 import { loadAllPosts } from '../data/index'

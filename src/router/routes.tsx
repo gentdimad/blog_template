@@ -1,4 +1,4 @@
-import { createBrowserRouter, NavLink } from 'react-router-dom'
+import { createBrowserRouter} from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import PostPage from '../pages/PostPage'
 import TagPage from '../pages/TagPage'

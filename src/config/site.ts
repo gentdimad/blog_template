@@ -7,11 +7,11 @@ export const site = {
   description: 'A Medium-style, component-driven technology blog built with React + Vite.',
   url: 'http://localhost:5173',
   developer: {
-    name: 'Your Name',
-    website: 'https://example.com',
+    name: 'Blog Template Team',
+    website: 'https://gentdimad.github.io/blog_template',
     twitter: 'yourhandle',
-    github: 'yourgithub',
-    email: 'you@example.com'
+    github: 'gentdimad',
+    email: 'victorygingoyon@gmail.com'
   },
   contact: {
     email: 'contact@example.com'
