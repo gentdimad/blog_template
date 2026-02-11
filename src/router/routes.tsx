@@ -6,11 +6,13 @@ import AuthorPage from '../pages/AuthorPage'
 import AboutPage from '../pages/AboutPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
+const DEFAULT_ROOT_PATH = '/blog_template';
+
 export const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/post/:slug', element: <PostPage /> },
-  { path: '/tag/:tag', element: <TagPage /> },
-  { path: '/author/:id', element: <AuthorPage /> },
-  { path: '/about', element: <AboutPage /> },
+  { path: DEFAULT_ROOT_PATH || "/", element: <HomePage /> },
+  { path: DEFAULT_ROOT_PATH + '/post/:slug', element: <PostPage /> },
+  { path: DEFAULT_ROOT_PATH + '/tag/:tag', element: <TagPage /> },
+  { path: DEFAULT_ROOT_PATH + '/author/:id', element: <AuthorPage /> },
+  { path: DEFAULT_ROOT_PATH + '/about', element: <AboutPage /> },
   { path: '*', element: <NotFoundPage /> },
 ])

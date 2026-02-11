@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e779e2a-7ea3-48ec-aa9a-f0afb1d7f909" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AuthorPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AuthorPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/CopyButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/CopyButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +63,7 @@
       <updated>1770724044909</updated>
       <workItem from="1770724049439" duration="4127000" />
       <workItem from="1770802456966" duration="3799000" />
-      <workItem from="1770814891768" duration="392000" />
+      <workItem from="1770814891768" duration="783000" />
     </task>
     <servers />
   </component>
