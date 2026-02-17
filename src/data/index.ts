@@ -4,10 +4,9 @@ import type { Post, PostFrontmatter } from './types'
 // Try multiple patterns to be robust across environments (Windows paths, base URLs)
 const modules = {
   ...import.meta.glob('../content/posts/**/*.md', { eager: true, query: '?raw', import: 'default' }),
-  ...import.meta.glob('/src/content/posts/**/*.md', { eager: true, query: '?raw', import: 'default' }),
+  // ...import.meta.glob('/src/content/posts/**/*.md', { eager: true, query: '?raw', import: 'default' }),
 } as Record<string, string>
 
-// Minimal frontmatter parser to avoid Buffer in browser
 function parseFrontmatter(raw: string): { fm: PostFrontmatter; body: string } {
   if (raw.startsWith('---')) {
     const end = raw.indexOf('\n---', 3)

@@ -1,18 +1,21 @@
 import React from 'react'
-import Header from './Header'
 import Footer from './Footer'
 import Container from './Container'
+import Shell from './Shell'
+import Header from "./Header.tsx";
+import RecommendationsList from "./RecommendationsList.tsx";
 
 export default function Page({ children }: { children: React.ReactNode }) {
   return (
     <div className="page">
-      <Header />
-      <main>
-        <Container>
-          {children}
-        </Container>
-      </main>
-      <Footer />
+      {/*<Header/>*/}
+      <Shell>
+        <main className="py-20 px-40">
+          <Container>
+            {children}
+          </Container>
+        </main>
+      </Shell>
     </div>
   )
 }

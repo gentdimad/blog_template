@@ -18,23 +18,27 @@ export default function PostPage() {
 
   if (!post) return <Page><p>Loading…</p></Page>
 
+  const hasToc = (post.headings?.length || 0) > 0
+
   return (
     <Page>
       <article>
-        <header>
+        <header className="mb-6">
           <h1>{post.title}</h1>
-          <p className="muted">{new Date(post.date).toLocaleDateString()} • {post.readingTime} min read</p>
+          <p className="text-[color:var(--color-muted)]">{new Date(post.date).toLocaleDateString()} • {post.readingTime} min read</p>
           <TagList tags={post.tags} />
         </header>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr minmax(200px, 280px)', gap: '2rem' }}>
+        <div className={`grid gap-8 ${hasToc ? 'lg:grid-cols-[1fr_minmax(200px,280px)]' : ''}`}>
           <Prose>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Prose>
-          <aside>
-            <TableOfContents headings={post.headings} />
-          </aside>
+          {hasToc && (
+            <aside className="hidden lg:block">
+              <TableOfContents headings={post.headings} />
+            </aside>
+          )}
         </div>
-        <footer style={{ marginTop: '2rem' }}>
+        <footer className="mt-8">
           <SocialShare title={post.title} />
         </footer>
       </article>

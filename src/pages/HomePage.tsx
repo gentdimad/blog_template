@@ -5,6 +5,7 @@ import FeaturedPost from '../components/cards/FeaturedPost'
 import SubscribeCTA from '../components/content/SubscribeCTA'
 import { loadAllPosts } from '../data/index'
 import type { Post } from '../data/types'
+import RecommendationsList from '../components/layout/RecommendationsList'
 
 export default function HomePage() {
   const [posts, setPosts] = useState<Post[]>([])
@@ -13,11 +14,13 @@ export default function HomePage() {
   const [featured, ...rest] = posts
   return (
     <Page>
-      {featured && <FeaturedPost post={featured} />}
-      <PostList posts={rest} />
-      <div style={{ marginTop: '2rem' }}>
-        <SubscribeCTA />
-      </div>
+      <RecommendationsList>
+        {/*{featured && <FeaturedPost post={featured} />}*/}
+        <PostList posts={posts} />
+        <div style={{ marginTop: '2rem' }}>
+          <SubscribeCTA />
+        </div>
+      </RecommendationsList>
     </Page>
   )
 }

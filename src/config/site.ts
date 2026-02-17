@@ -2,8 +2,8 @@
 // Modify values here to change site-wide metadata and colors.
 
 export const site = {
-  siteName: 'TechBlog',
-  tagline: 'A minimalist tech blog template',
+  siteName: 'Blog Template',
+  tagline: 'A minimalist blog template',
   description: 'A Medium-style, component-driven technology blog built with React + Vite.',
   url: 'http://localhost:5173',
   developer: {
