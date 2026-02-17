@@ -1,8 +1,6 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { site } from '../../config/site'
-import ThemeToggle from './ThemeToggle'
 import SearchBar from '../search/SearchBar'
-import {DEFAULT_ABOUT_PATH, DEFAULT_ROOT_PATH} from "../../router/routes.tsx";
 
 export default function Header() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StarIcon, UserCircleIcon } from '@heroicons/react/24/outline'
+import { StarIcon } from '@heroicons/react/24/outline'
 
 import staffPicksData from '../../content/team-picks/team-picks.json'
 import topicsData from '../../content/recommended-topics/recommended-topics.json'
