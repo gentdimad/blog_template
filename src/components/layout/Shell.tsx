@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import ThemeToggle from './ThemeToggle'
-import SearchBar from '../search/SearchBar'
 import { site } from '../../config/site'
 import { DEFAULT_ROOT_PATH } from '../../router/routes'
 import navItemsData from '../../config/nav.json'
@@ -21,12 +20,12 @@ export default function Shell({ children }: { children: React.ReactNode }) {
     }
   })
 
-    function handleCollapse(){
-        setCollapsed(v => !v)
-    }
+  function handleCollapse() {
+    setCollapsed(v => !v)
+  }
 
   useEffect(() => {
-    try { localStorage.setItem('shell:collapsed', collapsed ? '1' : '0') } catch {}
+    try { localStorage.setItem('shell:collapsed', collapsed ? '1' : '0') } catch { }
   }, [collapsed])
 
   // Sidebar nav items come from JSON and an icon registry
@@ -44,9 +43,9 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <Link to={DEFAULT_ROOT_PATH || '/'} className="inline-flex items-center gap-2 font-bold tracking-[0.3px]" aria-label={site.siteName}>
             <span className={`${collapsed ? 'hidden' : 'inline'}`}>{site.siteName}</span>
           </Link>
-            <div className="h-6 w-6 px-1 py-1 border border-gray-700 rounded-md" onClick={handleCollapse}>
-            { collapsed ?  <ChevronRightIcon />: <ChevronLeftIcon />}
-            </div>
+          <div className="h-6 w-6 px-1 py-1 border border-gray-700 rounded-md" onClick={handleCollapse}>
+            {collapsed ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+          </div>
         </div>
         {/*<div className={`${collapsed ? 'hidden' : 'block'}`}>*/}
         {/*  <SearchBar />*/}
@@ -60,10 +59,10 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                 key={item.to}
                 to={item.to}
                 end={isRoot}
-                className={({isActive}) => `inline-flex items-center ${collapsed ? 'justify-center gap-0' : 'gap-2'} text-[color:var(--color-muted)] px-2 py-1 rounded ${isActive ? 'text-[color:var(--color-text)]' : ''}`}
+                className={({ isActive }) => `inline-flex items-center ${collapsed ? 'justify-center gap-0' : 'gap-2'} text-[color:var(--color-muted)] px-2 py-1 rounded ${isActive ? 'text-[color:var(--color-text)]' : ''}`}
               >
                 <span className="w-8 h-8 rounded-md px-1 py-1 grid place-items-center" aria-hidden>
-                  <Icon className="flex w-7 h-7"/>
+                  <Icon className="flex w-7 h-7" />
                 </span>
                 <span className={`${collapsed ? 'hidden' : 'inline'} ml-2`}>{item.title}</span>
               </NavLink>

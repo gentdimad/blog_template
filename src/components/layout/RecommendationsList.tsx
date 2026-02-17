@@ -4,7 +4,6 @@ import { StarIcon } from '@heroicons/react/24/outline'
 
 import staffPicksData from '../../content/team-picks/team-picks.json'
 import topicsData from '../../content/recommended-topics/recommended-topics.json'
-import peopleData from '../../content/follow-suggestions/follow-suggestions.json'
 
 /**
  * Right-side Recommendations panel inspired by Medium.
@@ -17,11 +16,9 @@ import peopleData from '../../content/follow-suggestions/follow-suggestions.json
 export default function RecommendationsList({ children }: { children: React.ReactNode }) {
   type StaffPick = { title: string; by?: string; to: string }
   type Topic = string
-  type Person = { name: string; handle?: string; to: string }
 
   const staffPicks: StaffPick[] = staffPicksData
   const topics: Topic[] = topicsData
-  const people: Person[] = peopleData
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_minmax(260px,320px)]">
